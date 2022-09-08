@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * this is a puts docummentation
+ * main - Entry point
+ * Return: int
  **/
 
 int main(void)

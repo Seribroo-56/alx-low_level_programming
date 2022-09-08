@@ -2,7 +2,9 @@
 #include <stdlib.h>
 
 /**
- * prints to standard error
+/**
+ * main - Entry point
+ * Return: int
  **/
 int main(void)
 {
