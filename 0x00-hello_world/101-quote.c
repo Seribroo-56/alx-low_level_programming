@@ -3,7 +3,7 @@
 
 /**
  * prints to standard error
- */
+ **/
 int main(void)
 {
 	write(STDOUT_FILENO, "and that piece of art is useful
