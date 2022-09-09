@@ -4,7 +4,7 @@
 * main - Print combinations of two digit numbers
 *
 * Return: int 0
-**/
+*/
 int main(void)
 {
   int tens;
