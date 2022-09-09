@@ -11,22 +11,18 @@ int main(void)
 	
 	for (c = 48;
 	     c <= 57;
-	     c++)
-	{
+	     c++)   {
 		for (i = 48;
 		     i <= 57;
-		     i++)
-		{
+		     i++)   {
 			for (k = 48;
 			     k <= 57;
-			     k++)
-			{
+			     k++)  {
 				for (j = 48;
 				     j <= 57;
 				     j++)
 				{
-					if (((k + j) > (c + i) &&  k >= c) || c < k)
-					{
+				  if (((k + j) > (c + i) &&  k >= c) || c < k) {
 						putchar(c);
 						putchar(i);
 						putchar(' ');
