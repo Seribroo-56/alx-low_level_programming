@@ -1,30 +1,45 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: int 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-  int tens;
-  int ones;
+	int i;
+	int j;
 
-  for (tens = 0; tens <= 9; tens++)
-    {
-      for (ones = tens + 1; ones <= 9; ones++)
+	i = 48;
+	j = 49;
+	while  ((i < 57) && (j < 58))
 	{
-	  putchar(tens + '0');
-	  putchar(ones + '0');
+		putchar(i);
+		putchar(j);
+		if ((i == 56) && (j == 57))
+		{
+			putchar('\n');
+			i++;
+			j++;
+		}
+		else
+		{
+			putchar(44);
+			putchar(32);
+			if (j < 57)
+			{
+				j++;
+			}
+			else
+			{
+				i++;
+				j = 1 + i;
+			}
+		}
 
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
 	}
-    }
-  putchar('\n');
 
-  return (0);
+	return (0);
 }
