@@ -1,4 +1,10 @@
-*/
+#include <stdio.h>
+
+/**
+  * main - Prints 3 combination of numbers
+  *
+  * Return: int 0
+  */
 int main(void)
 {
 	int i, j, k, l;
