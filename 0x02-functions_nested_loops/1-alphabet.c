@@ -1,20 +1,16 @@
 #include "main.h"
 
 /**
-* main - Print the word "Holberton"
-*
-* Return: Always 0 (Success)
-*/
-
-int main(void)
+ main - Entry point
+ *
+ * Return: int 0
+ */
+void print_alphabet(void)
 {
-	int i;
-	char p[] = "Holberton";
+	char letter;
 
-	for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-		_putchar('\n');
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
